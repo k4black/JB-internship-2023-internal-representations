@@ -109,7 +109,10 @@ def _get_trainer_args(params, hub_model_name, output_dir, push_to_hub=False, mod
         save_total_limit=3,
 
         predict_with_generate=True,
-        torch_compile=False,  # not working as Tesla T4 for now
+        # TODO: set 256, but all other models was validated with max-len=20, so keep it to be able to compare
+        generation_max_length=20,  # 256 - max validation and test, a bit lower than max training sample
+        generation_num_beams=1,
+        torch_compile=False,  # not working on Tesla T4 for now
 
         hub_model_id=hub_model_name,
         resume_from_checkpoint=resume_from_checkpoint,

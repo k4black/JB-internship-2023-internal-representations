@@ -25,7 +25,7 @@ export NEPTUNE_PROJECT="k4black/jb-internal-representations"
 export TOKENIZERS_PARALLELISM=false
 
 
-python main.py $*
+python train.py $*
 
 
 deactivate
