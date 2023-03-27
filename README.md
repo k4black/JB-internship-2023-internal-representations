@@ -43,4 +43,5 @@ python -m pip install -r requirements.txt
 The full report is available in `colab.ipynb` or [online colab copy](https://colab.research.google.com/drive/1mU8Juxz1GqhD5h85APDmzwLp4_HmH9Wo?usp=sharing).  
 All experiments metrics for training are available in [neptune.ai project](https://new-ui.neptune.ai/k4black/jb-internal-representations).
 
-**tl;dr:** The best model achieved `BLEU: 34.96, EM: 21.4` (better than authors model, worse than top-1) on `CodeXGLUE ConCode` benchmark. `Salesforce/codet5-small` model was trained with `w_special_tokens` config from `params.json` using `train.py` script. 
+**tl;dr:** The best model achieved `BLEU: 34.96, EM: 21.4` (better than authors model, worse than top-1) on `CodeXGLUE ConCode` benchmark. `Salesforce/codet5-small` model was trained with `w_special_tokens` config from `params.json` using `train.py` script.   
+The final model is available at HuggingFace Hub as [k4black/Salesforce-codet5-small-CodeXGLUE-CONCODE-w_special_tokens`](https://huggingface.co/k4black/Salesforce-codet5-small-CodeXGLUE-CONCODE-w_special_tokens).
